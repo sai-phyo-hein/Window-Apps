@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumable Refill | Entry | Withdraw Ledger</title>
+    <link rel='stylesheet' href='childwinstyle.css'>
+</head>
+<body>
+    <div id = 'entryfield'>
+        <div id='entry'>
+            <label for='date'>Update Date :</label>
+            <input name = 'date' id= 'date' onblur = "(this.type = 'text')" onfocus="(this.type = 'date')">
+            
+            <label for='type'>Status :</label>
+            <select name = 'type' id = 'type'>
+                <option hidden value="">Select type of Current Entry</option>
+                <option value="withdraw">Withdraw</optoin>
+                <option value="refill">Refill</option>
+                <option value="newentry">New Entry</option>
+            </select>
+            <label>Consumable Name:</label>
+            <input id = 'consumablename' disabled = 'true'>
+            
+            <label>Amount :</label>
+            <input id = 'amount' type = "number" placeholder="Positive Number Only", min = 0>
+            <label>Unit :</label>
+            <input id = 'unit' type = "text">
+            <label id = "commentlabel">Purpose of Usage :</label>
+            <input id = 'store_or_purpose', type = "text">
+            <div id='item_type_div'></div>
+        </div>
+        <div id = 'databutton'>
+            <button id = 'save'>Save</button>
+            <button id = 'refresh'>Refresh</button>
+        </div>
+    </div>
+    <div id = 'hint'>
+    </div>
+    
+
+    <script src = 'consumablerecord.js'></script>
+</body>
+</html>

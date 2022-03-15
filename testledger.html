@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Ledger Entry</title>
+    <link rel='stylesheet' href='childwinstyle.css'>
+</head>
+<body>
+    <div id = 'entryfield'>
+        <div id='entry'>
+            <label for='date'>Testing/Usage Date :</label>
+            <input name = 'date' id= 'date' onblur = "(this.type = 'text')" onfocus="(this.type = 'date')">
+            <label for='type'>Testing Sample Type:</label>
+            <select name = 'type' id = 'type' placeholder="Select type of sample testing" >
+                <option hidden value="">Select type of sample testing</option>
+                <option value="CPL Pretreatment">CPL Line Pretreatment Sample</optoin>
+                <option value="MCL Pretreatment">MCL Line Pretreatment Sample</option>
+                <option value="Non Standard XRF">Non Standard XRF Test Sample</option>
+                <option value='Non Standard Microscope'>Non Standard Microscopic Analysis</option>
+                <option value='Pot Chemistry'>MCL Line POT Sample Analysis</option>
+                <option value="MCL Tensile">MCL Line Tesile Test Sample</option>
+                <option value="Non Standard Tensile">Non Standard Tensile Test</option>
+            </select>
+            <label>Performed by:</label>
+            <div id='performtoggfield'>
+                <p id='byme' style='color:rgba(10, 10, 10)'>By Me: </p>
+                <div id='performtoggbg'>
+                    <button id='performtoggbtn'></button>
+                </div>
+                <p id='byotherl' style='color:rgba(245, 234, 239, 0.5);' >By Other: </p>
+            </div>
+            <label>Test Starting Time :</label>
+            <input id = 'start' type = "time">
+            <label>Test Finishing/Result Submitting Time :</label>
+            <input id = 'finish' type = "time">
+            <label>Comment [optional] :</label>
+            <input id = 'comment', type = "text">
+        </div>
+    </div>
+    <div id = 'datasection'>
+        <p>Select Type of Sample Testing.</p>
+    </div>
+
+    <script src = 'testledger.js'></script>
+</body>
+</html>

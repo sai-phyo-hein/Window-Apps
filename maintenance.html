@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Maintenance Record</title>
+    <link rel='stylesheet' href='childwinstyle1.css'>
+</head>
+<body>
+    <div id='entry'>
+        <div>
+            <label for='date'>Update Date :</label>
+            <input name = 'date' id= 'date' onblur = "(this.type = 'text')" onfocus="(this.type = 'date')">
+        </div>
+        <div>
+            <label>Equipment :</label>
+            <select id = 'eq_name'>
+                <option hidden value ="">Select Equipment</option> 
+                <option value="edxrf">ED-XRF</option>
+                <option value='microscope'>Microscope</option>
+                <option value="arc-oes">Arc Spark OES</option>
+                <option value='tensile'>Tensile Machine</option> 
+                <option value='cnc'>CNC</option>
+                <option value='balance'>Analytical Balance</option> 
+                <option value='acid-fh'>Acid Handling Fume Hood</option>
+                <option value='base-fh'>Base Handling Fume Hood</option>
+                <option value='polish'>Polishing Machine</option>
+                <option value='exposure_1'>Exporsure Rack 1</option>
+                <option value='exposure_2'>Exporsure Rack 2</option>
+            </select>
+        </div>
+        <div>
+            <label for='type'>Maintenance Type :</label>
+            <select name = 'type' id = 'type'>
+                <option hidden value="">Select type of Maintenance</option>
+                <option value="weekly">Weekly</optoin>
+                <option value="monthly">Monthly</option>
+                <option value="preventive">Preventive</option>
+                <option value='repair'>Repair</option>
+            </select>
+        </div>
+    </div>
+    
+    <div id = 'datasection'>
+        <p>Select Equipment and Type of Maintenance.</p>
+    </div>
+    
+
+    <script src = 'maintenance.js'></script>
+</body>
+</html>

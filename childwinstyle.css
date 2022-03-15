@@ -1,0 +1,191 @@
+body{
+    background-color:  rgba(139, 170, 207);
+    display: flex;
+    flex-direction: row;
+    color: #4e6f78;
+}
+
+#entryfield{
+    margin-top: 10px;
+    align-content: center;
+}
+#entry{
+    box-shadow: 0px 0px 5px #fff;
+    border-radius : 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 320px;
+    margin: auto;
+    background-color: rgba(45,84,106,.2);
+}
+#entry input, #entry select{
+    background-color:  rgba(45,84,106,.3);
+    border-radius: 15px;
+    height: 30px;
+    width: auto;
+    outline: none;
+    padding-left: 20px;
+    border-top: none;
+    border-left:none;
+    border-bottom:2px solid rgb(0,0,0,.4);
+    font-size: 15px;
+    margin-top: 10px;
+}
+#entry input:focus, select:focus{
+    background-color: #fff;
+}
+#entry label{
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #d8e8e9;
+    margin-bottom: -5px;
+
+}
+
+#performtoggbg{
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color:  #556882;
+    margin-left : 10px;
+    margin-right: 10px;
+    border: 2px solid #000;
+}
+#peformtoggbg:hover, #databutton button:hover{
+    box-shadow: 3px 3px 5px #fff;
+}
+#performtoggbtn{
+    
+    height: 20px;
+    outline: none;
+    width: 20px;
+    border-radius: 50%;
+    background-color:rgba(168, 208, 218, 1);
+    position:relative;
+    left:0px;
+}
+#performtoggfield{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+#performtoggfield p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    height: 30px;
+}
+
+#datasection{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    margin: auto;
+    background-color: rgba(139, 170, 207);
+    align-content: center;
+}
+#datasection input,select{
+    background-color:   rgba(45,84,106,.3);
+    border-radius: 15px;
+    height: 30px;
+    width: auto;
+    outline: none;
+    padding-left: 20px;
+    border-top: none;
+    border-left:none;
+    border-bottom:2px solid rgb(0,0,0,.4);
+    font-size: 15px;
+    margin-top: 10px;
+}
+#testdata{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#testdata input{
+    background-color:  #556882;
+    border-radius: 15px;
+    height: 30px;
+    width: 150px;
+    outline: none;
+    border-top: none;
+    border-left:none;
+    border-bottom:2px solid rgb(0,0,0,.4);
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+#blankT_avg::placeholder, #operatorT_avg::placeholder, #driverT_avg::placeholder, #middleT_avg::placeholder{
+    color: rgba(139, 170, 207);
+    padding-left: -20px;
+}
+#blankT1::placeholder, #operatorT1::placeholder, #driverT1::placeholder, #middleT1::placeholder{
+    color: rgba(139, 170, 207);
+    padding-left: -20px;
+}
+#blankT2::placeholder, #operatorT2::placeholder, #driverT2::placeholder, #middleT2::placeholder{
+    color: rgba(139, 170, 207);
+    padding-left: -20px;
+}
+#blankT3::placeholder, #operatorT3::placeholder, #driverT3::placeholder, #middleT3::placeholder{
+    color: rgba(139, 170, 207);
+    padding-left: -20px;
+}
+#blankB_avg::placeholder, #operatorB_avg::placeholder, #driverB_avg::placeholder, #middleB_avg::placeholder{
+    color: rgba(139, 170, 207);
+    padding-left: -20px;
+}
+#blankB1::placeholder, #operatorB1::placeholder, #driverB1::placeholder, #middleB1::placeholder{
+    color: rgba(139, 170, 207);
+    padding-left: -20px;
+}
+#blankB2::placeholder, #operatorB2::placeholder, #driverB2::placeholder, #middleB2::placeholder{
+    color: rgba(139, 170, 207);
+    padding-left: -20px;
+}
+#blankB3::placeholder, #operatorB3::placeholder, #driverB3::placeholder, #middleB3::placeholder{
+    color: rgba(139, 170, 207);
+    padding-left: -20px;
+}
+#blank_div{
+    display: flex;
+    flex-direction: row;
+}
+#operator_side {
+    display: flex;
+    flex-direction: row;
+}
+#middle{
+    display: flex;
+    flex-direction: row;
+}
+#driver_side{
+    display: flex;
+    flex-direction: row;
+}
+#databutton{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 50%;
+    margin: auto;
+}
+#databutton button{
+    background-color: #fff;
+    border-radius: 15px;
+    height: 30px;
+    width: 250px;
+    outline: none;
+    border-top: none;
+    border-left:none;
+    border-bottom:2px solid rgb(0,0,0,.4);
+    font-size: 15px;
+    margin-top: 10px;
+}
+#samplingdate::placeholder, #byother::placeholder, #amount::placeholder{
+    color: rgba(0,0,0,.7);
+}

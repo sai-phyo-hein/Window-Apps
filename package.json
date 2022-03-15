@@ -1,0 +1,22 @@
+{
+  "name": "central_lab_data_v1",
+  "version": "1.0.0",
+  "description": "data_collections",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Sai Phyo Hein",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^15.3.0",
+    "electron-packager": "^15.4.0",
+    "require": "^2.4.20"
+  },
+  "dependencies": {
+    "dialogs": "^2.0.1",
+    "googleapis": "^89.0.0",
+    "jspdf": "^2.4.0"
+  }
+}
